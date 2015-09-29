@@ -1,3 +1,44 @@
+@font-face {
+    font-family: 'goudy_trajan_regularregular';
+    src: url('../fonts/goudytrajan-regular-trial-webfont.eot');
+    src: url('../fonts/goudytrajan-regular-trial-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/goudytrajan-regular-trial-webfont.woff2') format('woff2'),
+         url('../fonts/goudytrajan-regular-trial-webfont.woff') format('woff'),
+         url('../fonts/goudytrajan-regular-trial-webfont.ttf') format('truetype'),
+         url('../fonts/goudytrajan-regular-trial-webfont.svg#goudy_trajan_regularregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+h1, h2, h3, h4, h5, p, b, strong{
+	font-family: 'goudy_trajan_regularregular' !important;
+    letter-spacing: 2px;
+}
+#tagline{
+	width: 100%;
+	background-image: url('https://s3.amazonaws.com/myfangate.com/getscared/repeating.jpg');
+	background-repeat: repeat;
+}
+#tagline-top{
+	width: 100%;
+	background-image: url('https://s3.amazonaws.com/myfangate.com/getscared/taglinetop.png');
+	height: 82px;
+	margin-top: -82px;
+	background-repeat: repeat;
+	z-index: 100;
+	position: relative;	
+}
+#tagline-bottom{
+	width: 100%;
+	background-image: url('https://s3.amazonaws.com/myfangate.com/getscared/taglinebottom.png');
+	height: 82px;	
+	background-repeat: repeat;
+	z-index: 100;
+	position: relative;	
+}
+.full-w{
+	width: 100%;
+}
 body{
 	background-image: url('https://s3.amazonaws.com/myfangate.com/getscared/singlegear.jpg');
 	background-repeat: repeat;
@@ -14,4 +55,5 @@ body{
 	overflow: hidden;
 	background-position: center;
 	background-attachment: fixed;	
+	z-index: -999999;
 }
