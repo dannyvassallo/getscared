@@ -13,6 +13,7 @@
 h1, h2, h3, h4, h5, p, b, strong{
 	font-family: 'goudy_trajan_regularregular' !important;
     letter-spacing: 2px;
+    color: #8b8b8b;
 }
 #tagline{
 	width: 100%;
@@ -56,4 +57,23 @@ body{
 	background-position: center;
 	background-attachment: fixed;	
 	z-index: -999999;
+}
+.borderimg { 
+	border-width: 15px;	
+    -webkit-border-image: url('https://s3.amazonaws.com/myfangate.com/getscared/repeating.jpg') 15 repeat stretch;
+    -o-border-image: url('https://s3.amazonaws.com/myfangate.com/getscared/repeating.jpg') 15 repeat stretch;
+    border-image: url('https://s3.amazonaws.com/myfangate.com/getscared/repeating.jpg') 15 repeat stretch;
+}
+.stroke{
+   color: black;
+   -webkit-text-fill-color: #8b8b8b; /* Will override color (regardless of order) */
+   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: black;
+}
+@media(min-width:990px){
+	.cta{
+		i{
+			display: inline !important;
+		}
+	}
 }
