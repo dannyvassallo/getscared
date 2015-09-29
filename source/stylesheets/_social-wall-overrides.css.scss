@@ -1,0 +1,64 @@
+.dcsns-toolbar{
+  display: none;
+}
+.stream li{
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  box-shadow: 0px 0px 10px 2px #000;
+}
+.section-intro{
+  background-color: #8b8b8b !important;
+  color: white !important;
+}
+.section-text{
+  color: white;
+}
+
+@media (max-width: 1200px) {
+  .dcsns-content {
+    margin-left: 125px;
+    max-width: 940px;
+  }
+}
+@media (max-width: 768px) {
+  .dcsns-content {
+    margin-left: 110px;
+    max-width: 940px;
+  }
+}
+@media (max-width: 680px) {
+  .dcsns-content {
+    margin-left: 100px;
+    max-width: 940px;
+  }
+}
+@media (max-width: 660px) {
+  .dcsns-content {
+    margin-left: 80px;
+    max-width: 940px;
+  }
+}
+@media (max-width: 600px) {
+  .dcsns-content {
+    margin-left: 60px;
+    max-width: 940px;
+  }
+}
+@media (max-width: 560px) {
+  .dcsns-content {
+    margin-left: 125px;
+    max-width: 940px;
+  }
+}
+@media (max-width: 480px) {
+  .dcsns-content {
+    margin-left: 100px;
+    max-width: 940px;
+  }
+}
+@media (max-width: 440px) {
+  .dcsns-content {
+    margin-left: 30px;
+    max-width: 940px;
+  }
+}

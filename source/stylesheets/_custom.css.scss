@@ -1,2 +1,127 @@
-// Add custom css here or create more partials
-// and import them in all.css.scss!
+@font-face {
+    font-family: 'goudy_trajan_regularregular';
+    src: url('../fonts/goudytrajan-regular-trial-webfont.eot');
+    src: url('../fonts/goudytrajan-regular-trial-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/goudytrajan-regular-trial-webfont.woff2') format('woff2'),
+         url('../fonts/goudytrajan-regular-trial-webfont.woff') format('woff'),
+         url('../fonts/goudytrajan-regular-trial-webfont.ttf') format('truetype'),
+         url('../fonts/goudytrajan-regular-trial-webfont.svg#goudy_trajan_regularregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+h1, h2, h3, h4, h5, p, b, strong{
+	font-family: 'goudy_trajan_regularregular' !important;
+    letter-spacing: 2px;
+    color: #8b8b8b;
+}
+#tagline{
+	width: 100%;
+	background-image: url('https://s3.amazonaws.com/myfangate.com/getscared/repeating.jpg');
+	background-repeat: repeat;
+	box-shadow: 0px 0px 200px 30px #000;
+	position: relative;
+}
+#tagline-top{
+	width: 100%;
+	background-image: url('https://s3.amazonaws.com/myfangate.com/getscared/taglinetop.png');
+	height: 82px;
+	margin-top: -82px;
+	background-repeat: repeat;
+	z-index: 100;
+	position: relative;		
+}
+#tagline-bottom{
+	width: 100%;
+	background-image: url('https://s3.amazonaws.com/myfangate.com/getscared/taglinebottom.png');
+	height: 82px;	
+	background-repeat: repeat;
+	z-index: 100;
+	position: relative;		
+}
+.full-w{
+	width: 100%;
+}
+body{
+	background-image: url('https://s3.amazonaws.com/myfangate.com/getscared/singlegear.jpg');
+	background-repeat: repeat;
+	background-position: bottom left;
+	overflow-x: hidden;
+	box-shadow: inset 0px 0px 200px #000;
+}
+.smallergears{
+	background-image: url('https://s3.amazonaws.com/myfangate.com/getscared/mixedgears.png');
+	background-repeat: repeat;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	background-position: center;
+	background-attachment: fixed;	
+	z-index: -999999;
+}
+.borderimg { 
+	border-width: 15px;	
+    -webkit-border-image: url('https://s3.amazonaws.com/myfangate.com/getscared/repeating.jpg') 15 repeat stretch;
+    -o-border-image: url('https://s3.amazonaws.com/myfangate.com/getscared/repeating.jpg') 15 repeat stretch;
+    border-image: url('https://s3.amazonaws.com/myfangate.com/getscared/repeating.jpg') 15 repeat stretch;
+    box-shadow: 0px 0px 20px 6px #000;
+}
+.stroke{
+   color: black;
+   -webkit-text-fill-color: #8b8b8b; /* Will override color (regardless of order) */
+   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: black;
+}
+@media(min-width:990px){
+	.cta{
+		i{
+			display: inline !important;
+		}
+	}
+}
+// 7 col grid
+@media (min-width: 1200px) {
+  .seven-cols .col-md-1,
+  .seven-cols .col-sm-1,
+  .seven-cols .col-lg-1 {
+    width: 14.285714285714285714285714285714%;
+    *width: 14.285714285714285714285714285714%;
+  }
+}
+.calendar-img{
+	margin-bottom: 30px;
+    border-width:2px;
+    border-color: #8b8b8b;	
+    border-style:dashed;
+    box-shadow: 0px 0px 20px 6px #000;
+}
+.day{
+	background-color: rgba(0,0,0,0.5);
+	margin-bottom: 30px;
+}
+.number{
+    position: absolute;
+    bottom: 34px;    
+    right: 20px;
+    border-radius: 50%;
+    background-color: black;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    h3{
+    	margin-top: 9px;
+		text-shadow: 0px 0px 0px #000;
+    }
+}
+#calendar{
+	margin-top: 3%;
+}
+.text-shadow{
+	text-shadow: 1px 1px 8px #000;
+}
+.footer{
+	margin-top: 150px !important;
+}

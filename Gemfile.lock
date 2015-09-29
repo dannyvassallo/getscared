@@ -39,8 +39,6 @@ GEM
     eventmachine (1.0.7)
     execjs (2.5.2)
     ffi (1.9.8)
-    font-awesome-middleman (4.2.3)
-      middleman-core (~> 3.0)
     haml (4.0.6)
       tilt
     hike (1.2.3)
@@ -85,6 +83,8 @@ GEM
       middleman-core (>= 3.0.2)
       multi_json (~> 1.0)
       rack-livereload
+    middleman-php (0.0.3)
+      middleman-core (>= 3.2.1)
     middleman-sprockets (3.4.2)
       middleman-core (>= 3.3)
       sprockets (~> 2.12.1)
@@ -134,9 +134,9 @@ PLATFORMS
 
 DEPENDENCIES
   bootstrap-sass
-  font-awesome-middleman
   jquery-middleman
   middleman (~> 3.3.12)
   middleman-livereload (~> 3.1.0)
+  middleman-php
   tzinfo-data
   wdm (~> 0.1.0)
