@@ -9,9 +9,13 @@ function alignCta(){
 }
 
 $(function(){
-	alignCta();
+	if ($(window).width() >= 989){
+		alignCta();
+	}
 });
 
 $(window).resize(function(){
-	alignCta();
+	if ($(window).width() >= 989){
+		alignCta();
+	}
 });
