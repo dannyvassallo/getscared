@@ -44,13 +44,14 @@ body{
 	background-image: url('https://s3.amazonaws.com/myfangate.com/getscared/singlegear.jpg');
 	background-repeat: repeat;
 	background-position: bottom left;
+	overflow-x: hidden;
 }
 .smallergears{
 	background-image: url('https://s3.amazonaws.com/myfangate.com/getscared/mixedgears.png');
 	background-repeat: repeat;
 	width: 100%;
 	height: 100%;
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
 	overflow: hidden;
@@ -76,4 +77,40 @@ body{
 			display: inline !important;
 		}
 	}
+}
+// 7 col grid
+@media (min-width: 1200px) {
+  .seven-cols .col-md-1,
+  .seven-cols .col-sm-1,
+  .seven-cols .col-lg-1 {
+    width: 14.285714285714285714285714285714%;
+    *width: 14.285714285714285714285714285714%;
+  }
+}
+.calendar-img{
+	margin-bottom: 30px;
+    border-width:2px;
+    border-color: #8b8b8b;	
+    border-style:dashed;
+}
+.day{
+	background-color: rgba(0,0,0,0.5);
+	margin-bottom: 30px;
+}
+.number{
+    position: absolute;
+    bottom: 34px;    
+    right: 20px;
+    border-radius: 50%;
+    background-color: black;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    h3{
+    	margin-top: 9px;
+		text-shadow: 0px 0px 0px #000;
+    }
+}
+#calendar{
+	margin-top: 3%;
 }
