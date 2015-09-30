@@ -1,4 +1,4 @@
-# activate :php
+activate :php
 ###
 # Compass
 ###

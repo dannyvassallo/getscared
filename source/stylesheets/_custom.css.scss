@@ -97,6 +97,7 @@ body{
     border-color: #8b8b8b;	
     border-style:dashed;
     box-shadow: 0px 0px 20px 6px #000;
+    cursor: pointer;
 }
 .day{
 	background-color: rgba(0,0,0,0.5);
@@ -146,4 +147,26 @@ body{
 }
 .tagline{
 	margin-top: 20px;
+}
+.modal-body{
+	background-color: black !important;
+}
+// center modal
+.modal {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) { 
+  .modal:before {
+    display: inline-block;
+    vertical-align: middle;
+    content: " ";
+    height: 100%;
+  }
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
 }
