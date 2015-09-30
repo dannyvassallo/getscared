@@ -2,10 +2,10 @@ $(document).ready(function($){
     $('#social-stream').dcSocialStream({
         feeds: {
             twitter: {
-                id: '#31DAYSOFGETSCARED, #getscared'
+                id: '#31DaysOfGS, #getscared'
             },
             instagram: {
-                id: '#31DAYSOFGETSCARED, #getscared',
+                id: '#31DaysOfGS, #getscared',
                 accessToken: '9803372.ad5b8ca.ad04165a1fbc4852b5f7d82abe8da3ba',
                 clientId: 'ad5b8cadaf80454698639bb22f59a0f9',
                 comments: 3,
