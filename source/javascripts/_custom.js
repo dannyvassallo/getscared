@@ -43,3 +43,38 @@ function checkBrowser(){
 $(function(){
 	checkBrowser();
 });
+
+
+
+
+// Weekend Unlocker
+
+var curDate = new Date();
+curDate = curDate.setHours(0,0,0,0);
+var day3 = new Date("10/03/2015");
+var day4 = new Date("10/04/2015");
+
+// custom appensions
+function appendDayThree(){
+    $('.day3 img').attr('src','https://s3.amazonaws.com/myfangate.com/getscared/day2thumb.jpg');
+    $('.day3').attr( "data-toggle", "modal" );
+    $('.day3').attr( "data-target", "#day3" );
+}
+
+function appendDayFour(){
+    $('.day4 img').attr('src','https://s3.amazonaws.com/myfangate.com/getscared/day2thumb.jpg');
+    $('.day4').attr( "data-toggle", "modal" );
+    $('.day4').attr( "data-target", "#day4" );
+}
+
+// document ready
+$(function(){
+    // day 3
+    if (curDate >= day3.setHours(0,0,0,0)){
+        appendDayThree();
+    } 
+    // day 4
+    if (curDate >= day4.setHours(0,0,0,0)){        
+        appendDayFour();
+    }     
+});
