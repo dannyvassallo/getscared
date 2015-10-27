@@ -57,6 +57,8 @@ var day10 = new Date("10/10/2015");
 var day11 = new Date("10/11/2015");
 var day17 = new Date("10/17/2015");
 var day18 = new Date("10/18/2015");
+var day28 = new Date("10/28/2015");
+var day29 = new Date("10/29/2015");
 
 // custom appensions
 function appendDayThree(){
@@ -90,6 +92,16 @@ function appendDayEighteen(){
     $('.day18').attr( "data-toggle", "modal" );
     $('.day18').attr( "data-target", "#day18" );
 }
+function appendDayTwentyEight(){
+    $('.day28 img').attr('src','https://s3.amazonaws.com/myfangate.com/getscared/day28thumb.jpg');
+    $('.day28').attr( "data-toggle", "modal" );
+    $('.day28').attr( "data-target", "#day28" );
+}
+function appendDayTwentyNine(){
+    $('.day29 img').attr('src','https://s3.amazonaws.com/myfangate.com/getscared/day29thumb.jpg');
+    $('.day29').attr( "data-toggle", "modal" );
+    $('.day29').attr( "data-target", "#day29" );
+}
 
 // document ready
 $(function(){
@@ -116,7 +128,15 @@ $(function(){
     // day 18
     if (curDate >= day18.setHours(0,0,0,0)){        
         appendDayEighteen();
-    }      
+    } 
+    // day 28
+    if (curDate >= day28.setHours(0,0,0,0)){        
+        appendDayTwentyEight();
+    }  
+    // day 29
+    if (curDate >= day29.setHours(0,0,0,0)){        
+        appendDayTwentyNine();
+    }              
 });
 
 // spotify
