@@ -36,8 +36,11 @@ function checkBrowser(){
         brwsr ="MSIE 9.0";
     }else if (m8>-1){
         brwsr ="MSIE 8.0";
+    }else{
+        brwsr ="Doesn\'t Matter";  
     }
     return brwsr;
+    
 }
 
 $(function(){
